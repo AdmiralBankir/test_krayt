@@ -1,0 +1,36 @@
+{
+  "name": "krayt",
+  "version": "1.0.0",
+  "description": "Тестовое задание для Krayt",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0"
+  },
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp-csso": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp start",
+    "css": "gulp css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdmiralBankir/test_krayt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdmiralBankir/test_krayt/issues"
+  },
+  "homepage": "https://github.com/AdmiralBankir/test_krayt#readme"
+}
