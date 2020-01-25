@@ -1,13 +1,42 @@
 .pricing__title {
   .title-font;
+  margin: 113px 0 23px;
 }
 
 .pricing__description {
   .content-font;
+  margin: 0 auto 80px;
+  width: 685px;
+  text-align: center;
+}
+
+.pricing__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .pricing__list-item {
+  display: flex;
+  flex-basis: 263px;
+  flex-direction: column;
   list-style: none;
+  cursor: pointer;
+  background-color: #f7fafc;
+  transition-duration: @transition-time;
+  transition-timing-function: @transition-function;
+
+  &:hover .pricing__buy-btn,
+  &:hover .pricing__list-value {
+    background-image: @red-gradient;
+    color: #ffffff;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+    filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.1));
+  }
 }
 
 .pricing__list-title {
@@ -16,32 +45,72 @@
   font-family: "Dosis";
   font-weight: 400;
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 19px;
 }
 
 .pricing__list-value {
-  font-size: 18px;
+  font-size: 48px;
   font-family: "Dosis";
   font-weight: 500;
   text-align: center;
-  color: #ffffff;
+  color: #333333;
+  margin: 0;
+  background-color: #ffffff;
+  padding-top: 28px;
+  padding-bottom: 53px;
+  margin-bottom: 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 50% 100%, 0 65%);
+
+  & sup,
+  sub {
+    font-size: 18px;
+  }
+
+  & sub {
+    vertical-align: 0;
+  }
+
+  & sup {
+    vertical-align: 1.14em;
+  }
 }
 
-.price-list__conditions-item {
-  .content-font;
-  list-style: none;
-  line-height: 30px;
-  text-align: center;
+.price-list__conditions {
+  margin: 0 0 49px;
+  padding: 0;
+
+  &-item {
+    .content-font;
+    list-style: none;
+    line-height: 30px;
+    text-align: center;
+    width: 204px;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      padding-bottom: 3px;
+      border-bottom: 1px dashed #eeeeee;
+    }
+  }
 }
 
-.pricing__buy span {
-  color: #aaaaaa;
-  font-weight: 300;
-  text-align: center;
+.pricing__buy {
+  margin: 0 auto 40px;
+  width: 145px;
+
+  & span {
+    display: block;
+    color: #aaaaaa;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 14px;
+  }
 }
 
 .pricing__buy-btn {
+  .btn-font;
+  line-height: 24px;
   color: #333333;
-  font-weight: 500;
   text-decoration: none;
-  text-align: center;
 }

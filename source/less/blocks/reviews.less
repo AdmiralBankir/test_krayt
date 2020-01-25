@@ -1,9 +1,14 @@
 .reviews__title {
   .title-font;
+  margin: 0;
+  padding-top: 119px;
+  margin-bottom: 25px;
 }
 
 .reviews__description {
   .content-font;
+  margin: 0 auto 77px;
+  width: 670px;
   text-align: center;
 }
 
@@ -18,9 +23,57 @@
   font-family: "Dosis";
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 5px;
 }
 
 .reviews__author-company {
   .content-font;
   font-style: normal;
+}
+
+.reviews__author {
+  margin-left: 98px;
+}
+
+.reviews__author-company,
+.reviews__author-name {
+  display: block;
+}
+
+.reviews__wrapper {
+  display: flex;
+  width: 1140px;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 360px;
+  min-height: 270px;
+  background-color: #f7fafc;
+  padding: 27px 44px 36px 37px;
+  box-sizing: border-box;
+
+  & blockquote {
+    margin: 0;
+  }
+
+  &:hover {
+    filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.1));
+    background-color: #ffffff;
+    cursor: pointer;
+    transition-duration: @transition-time;
+    transition-timing-function: @transition-function;
+  }
+}
+
+.reviews_toggle {
+  align-self: center;
+}
+
+.reviews {
+  margin-bottom: 120px;
 }

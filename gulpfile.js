@@ -60,8 +60,18 @@ gulp.task("clean", function() {
   return del("build")
 });
 
+gulp.task("copy", function() {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"))
+});
+
 gulp.task("build", gulp.series(
   "clean",
+  "copy",
   "css",
   "html"));
 

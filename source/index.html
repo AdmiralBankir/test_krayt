@@ -101,20 +101,24 @@
         <div class="delimeter"></div>
 
         <div class="another-features">
-          <p class="another-features__title">We don’t leave you stranded</p>
-          <p class="another-features__description">Everyone’s reasons for learning user interface design are different...</p>
-          <p class="another-features__description">Everyone’s reasons for learning user interface design are diffe</p>
-          <ul class="another-features__list">
-            <li class="another-features__item">
-              <p>Unlimited colors: banner with images, slider or video</p>
-            </li>
-            <li class="another-features__item">
-              <p>Fully Responsive and powered by HTML5 and CSS3</p>
-            </li>
-            <li class="another-features__item">
-              <p>Very easy to customize : set up in minutes</p>
-            </li>
-          </ul>
+          <div class="another-features__container">
+            <p class="another-features__title">We don’t leave you stranded</p>
+            <p class="another-features__description">Everyone’s reasons for learning user interface design are different...</p>
+            <div class="another-features__content-wrapper">
+              <p class="another-features__description">Everyone’s reasons for learning user interface design are diffe</p>
+              <ul class="another-features__list">
+                <li class="another-features__item">
+                  <p>Unlimited colors: banner with images, slider or video</p>
+                </li>
+                <li class="another-features__item">
+                  <p>Fully Responsive and powered by HTML5 and CSS3</p>
+                </li>
+                <li class="another-features__item">
+                  <p>Very easy to customize : set up in minutes</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -122,75 +126,83 @@
     <section class="screenshots slider">
       <h2 class="screenshots__title">Take a look at our screenshots</h2>
       <p class="screenshots__description">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
-      <p>Здесь будет слайдер</p>
+      <div class="slider__container">
+        <button class="slider__toggle" type="button" title="Previous"></button>
+        <img src="#" width="1140" height="500" alt="Screenshots example">
+        <button class="slider__toggle" type="button" title="Next"></button>
+      </div>
     </section>
 
     <section class="pricing">
+      <div class="container">
+        <h2 class="pricing__title">We've got the perfect package for you</h2>
+        <p class="pricing__description">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
 
-      <h2 class="pricing__title">We've got the perfect package for you</h2>
-      <p class="pricing__description">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+        <ol class="pricing__list">
+          <li class="pricing__list-item">
+              <label class="pricing__list-title" for="basic-rate">Basic</label>
+              <p class="pricing__list-value"><sup>$</sup>12.0<sub>/m</sub></p>
+              <ul class="price-list__conditions">
+                <li class="price-list__conditions-item">One User</li>
+                <li class="price-list__conditions-item">Multiple Access</li>
+                <li class="price-list__conditions-item">SMS Support</li>
+                <li class="price-list__conditions-item">24/7 Online Support</li>
+              </ul>
+              <p class="pricing__buy">
+                <span>Start Free Trial</span>
+                <a class="pricing__buy-btn" href="">Buy Now</a>
+              </p>
+          </li>
 
-      <ol class="pricing__list">
-        <li class="pricing__list-item">
-          <p class="pricing__list-title">Basic</p>
-          <p class="pricing__list-value">$12.0/m</p>
-          <ul class="price-list__conditions">
-            <li class="price-list__conditions-item">One User</li>
-            <li class="price-list__conditions-item">Multiple Access</li>
-            <li class="price-list__conditions-item">SMS Support</li>
-            <li class="price-list__conditions-item">24/7 Online Support</li>
-          </ul>
-          <p class="pricing__buy">
-            <span>Start Free Trial</span>
-            <a class="pricing__buy-btn" href="">Buy Now</a>
-          </p>
-        </li>
+          <li class="pricing__list-item">
+            <input class="visually-hidden" type="checkbox" name="standard" id="standard-rate">
+            <label class="pricing__list-title" for="standard-rate">Standard</label>
+            <p class="pricing__list-value"><sup>$</sup>24.0<sub>/m</sub></p>
+            <ul class="price-list__conditions">
+              <li class="price-list__conditions-item">Five User</li>
+              <li class="price-list__conditions-item">Multiple Access</li>
+              <li class="price-list__conditions-item">SMS Support</li>
+              <li class="price-list__conditions-item">24/7 Online Support</li>
+            </ul>
+            <p class="pricing__buy">
+              <span>Start Free Trial</span>
+              <a class="pricing__buy-btn" href="">Buy Now</a>
+            </p>
+          </li>
 
-        <li class="pricing__list-item">
-          <p class="pricing__list-title">Standard</p>
-          <p class="pricing__list-value">$24.0/m</p>
-          <ul class="price-list__conditions">
-            <li class="price-list__conditions-item">Five User</li>
-            <li class="price-list__conditions-item">Multiple Access</li>
-            <li class="price-list__conditions-item">SMS Support</li>
-            <li class="price-list__conditions-item">24/7 Online Support</li>
-          </ul>
-          <p class="pricing__buy">
-            <span>Start Free Trial</span>
-            <a class="pricing__buy-btn" href="">Buy Now</a>
-          </p>
-        </li>
+          <li class="pricing__list-item">
+            <input class="visually-hidden" type="checkbox" name="premium" id="premium-rate">
+            <label class="pricing__list-title" for="premium-rate">Premium</label>
+            <p class="pricing__list-value"><sup>$</sup>250.0<sub>/m</sub></p>
+            <ul class="price-list__conditions">
+              <li class="price-list__conditions-item">Twenty User</li>
+              <li class="price-list__conditions-item">Multiple Access</li>
+              <li class="price-list__conditions-item">SMS Support</li>
+              <li class="price-list__conditions-item">24/7 Online Support</li>
+            </ul>
+            <p class="pricing__buy">
+              <span>Start Free Trial</span>
+              <a class="pricing__buy-btn" href="">Buy Now</a>
+            </p>
+          </li>
 
-        <li class="pricing__list-item">
-          <p class="pricing__list-title">Premium</p>
-          <p class="pricing__list-value">$250.0/m</p>
-          <ul class="price-list__conditions">
-            <li class="price-list__conditions-item">Twenty User</li>
-            <li class="price-list__conditions-item">Multiple Access</li>
-            <li class="price-list__conditions-item">SMS Support</li>
-            <li class="price-list__conditions-item">24/7 Online Support</li>
-          </ul>
-          <p class="pricing__buy">
-            <span>Start Free Trial</span>
-            <a class="pricing__buy-btn" href="">Buy Now</a>
-          </p>
-        </li>
-
-        <li class="pricing__list-item">
-          <p class="pricing__list-title">Enterprise</p>
-          <p class="pricing__list-value">$999.0/m</p>
-          <ul class="price-list__conditions">
-            <li class="price-list__conditions-item">Unlimited User</li>
-            <li class="price-list__conditions-item">Multiple Access</li>
-            <li class="price-list__conditions-item">SMS Support</li>
-            <li class="price-list__conditions-item">24/7 Online Support</li>
-          </ul>
-          <p class="pricing__buy">
-            <span>Start Free Trial</span>
-            <a class="pricing__buy-btn" href="">Buy Now</a>
-          </p>
-        </li>
-      </ol>
+          <li class="pricing__list-item">
+            <input class="visually-hidden" type="checkbox" name="enterprise" id="enterprise-rate">
+            <label class="pricing__list-title" for="enterprise-rate">Enterprise</label>
+            <p class="pricing__list-value"><sup>$</sup>999.0<sub>/m</sub></p>
+            <ul class="price-list__conditions">
+              <li class="price-list__conditions-item">Unlimited User</li>
+              <li class="price-list__conditions-item">Multiple Access</li>
+              <li class="price-list__conditions-item">SMS Support</li>
+              <li class="price-list__conditions-item">24/7 Online Support</li>
+            </ul>
+            <p class="pricing__buy">
+              <span>Start Free Trial</span>
+              <a class="pricing__buy-btn" href="">Buy Now</a>
+            </p>
+          </li>
+        </ol>
+      </div>
 
     </section>
 
@@ -205,12 +217,12 @@
       <p class="reviews__description">Everyone’s reasons for learning user interface design are diffe</p>
 
       <div class="slider__container">
-        <button class="slider__toggle" type="button" title="Предыдущий отзыв"><img width="50" height="26" src="./img/icon-left-arrow.svg" alt="Предыдущий отзыв"></button>
+        <button class="reviews_toggle slider__toggle" type="button" title="Previous"></button>
 
         <div class="reviews__wrapper">
 
-          <div class="slider__item">
-            <blockquote class="reviews__item">
+          <div class="reviews__item">
+            <blockquote>
               <p class="reviews__text">The JustLanded for WordPress theme is great, super easy to use</p>
             </blockquote>
 
@@ -220,8 +232,8 @@
             </cite>
           </div>
 
-          <div class="slider__item">
-            <blockquote class="reviews__item">
+          <div class="reviews__item">
+            <blockquote>
               <p class="reviews__text">Very happy with the theme and incredibly easy to configure, wel</p>
             </blockquote>
 
@@ -231,8 +243,8 @@
             </cite>
           </div>
 
-          <div class="slider__item">
-            <blockquote class="reviews__item">
+          <div class="reviews__item">
+            <blockquote>
               <p class="reviews__text">Definitely a great theme and the support team are fantastic. Cu</p>
             </blockquote>
 
@@ -243,10 +255,9 @@
           </div>
 
         </div>
-
+        <button class="reviews_toggle slider__toggle" type="button" title="Next"></button>
       </div>
 
-      <button class="slider__toggle" type="button" title="Следующий отзыв"><img width="50" height="26" src="./img/icon-right-arrow.svg" alt="Следующий отзыв"></button>
 
     </section>
 
@@ -254,19 +265,19 @@
       <h2 class="downloads__title">Download Giant App Now</h2>
       <ul class="downloads__list">
         <li class="downloads__item downloads__item--apple">
-          <a href="">
+          <a class="downloads__link" href="">
             <span class="downloads__text-link">Download</span>
             <span class="downloads__source">Download from app store</span>
           </a>
         </li>
         <li class="downloads__item downloads__item--android">
-          <a href="">
+          <a class="downloads__link" href="">
             <span class="downloads__text-link">Download</span>
             <span class="downloads__source">Download from play store</span>
           </a>
         </li>
         <li class="downloads__item downloads__item--windows">
-          <a href="">
+          <a class="downloads__link" href="">
             <span class="downloads__text-link">Download</span>
             <span class="downloads__source">Download from microsoft store</span>
           </a>
@@ -278,19 +289,27 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <svg></svg>
+            <svg width="21" height="23">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
             <a class="social__link visually-hidden" href="">We are on Facebook</a>
           </li>
           <li class="social__item">
-            <svg></svg>
+            <svg width="18" height="20">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
             <a class="social__link visually-hidden" href="">We are on Twitter</a>
           </li>
           <li class="social__item">
-            <svg></svg>
+            <svg width="15" height="20">
+              <use xlink:href="#icon-ball"></use>
+            </svg>
             <a class="social__link visually-hidden" href="">We are on ?</a>
           </li>
           <li class="social__item">
-            <svg></svg>
+            <svg width="25" height="21">
+              <use xlink:href="#icon-be"></use>
+            </svg>
             <a class="social__link visually-hidden" href="">We are on ?</a>
           </li>
         </ul>

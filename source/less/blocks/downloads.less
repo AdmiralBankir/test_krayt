@@ -3,30 +3,52 @@
   line-height: 24px;
   color: #ffffff;
   font-weight: 400;
+  margin: 0 0 87px;
 }
 
 .downloads {
   background: @red-gradient;
+  padding-bottom: 120px;
+  padding-top: 117px;
 }
 
 .downloads__item {
   list-style: none;
   background-color: #ffffff;
-
-  & a {
-    display: block;
-    text-decoration: none;
-  }
+  flex-basis: 32%;
+  min-height: 115px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .downloads__text-link {
-    font-size: 30px;
-    line-height: 24px;
-    color: #222222;
-    font-family: "Dosis";
-    font-weight: 600;
+  font-size: 30px;
+  line-height: 24px;
+  color: #222222;
+  font-family: "Dosis";
+  font-weight: 600;
 }
 
 .downloads__source {
   .content-font;
+}
+
+.downloads__list {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: @desktop-width;
+}
+
+.downloads__link {
+  min-height: 55px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 27px;
+  padding-left: 133px;
 }
