@@ -1,0 +1,50 @@
+.video__player {
+  background: url("../img/video-preview.jpg") no-repeat center;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/video-preview@2x.jpg") no-repeat center;
+  }
+
+  & span {
+    position: absolute;
+    font-family: "FontAwesome";
+    font-size: 28px;
+    line-height: 25px;
+    top: 37%;
+    left: 39%;
+    color: #ffffff;
+    border-radius: 50%;
+    background-image: @red-gradient;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition-duration: @transition-time;
+    transition-timing-function: @transition-function;
+
+    &:active {
+      box-shadow: inset 0 2px 2px rgba(172,16,0,1);
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &::before {
+      position: absolute;
+      top: 34%;
+      left: 41%;
+    }
+  }
+}
+
+.video__player {
+  background-size: cover;
+}
+
+@media (min-width: @desktop-width) {
+  .video__player span {
+    left: 46%;
+  }
+}

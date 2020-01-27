@@ -1,7 +1,7 @@
 .advantages__title {
   font-family: "Dosis";
-  font-size: 54px;
-  line-height: 60px;
+  font-size: 49px;
+  line-height: 55px;
   font-weight: 600;
   color: #ffffff;
 }
@@ -14,23 +14,47 @@
 .advantages__link {
   .btn-font;
   text-decoration: none;
-  float: left;
+  align-self: flex-start;
+  width: 260px;
+  box-sizing: border-box;
 }
 
 .advantages__item {
   list-style: none;
+  position: relative;
 
   & p {
     color: #ffffff;
     font-weight: 400;
   }
+
+  &::before {
+    .icon-property;
+    width: 15px;
+    height: 15px;
+    left: -38px;
+    top: 5px;
+    background: url("../img/success-logo.png");
+  }
 }
 
 .advantages {
-  width: 535px;
-  padding-bottom: 218px;
+  padding: 0 30px 40px;
 }
 
 .advantages__list {
   margin-bottom: 40px;
+}
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: 535px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    &__title {
+      font-size: 54px;
+      line-height: 60px;
+    }
+  }
 }

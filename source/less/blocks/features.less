@@ -4,8 +4,7 @@
   line-height: 24px;
   font-weight: 500;
   color: #222222;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
 }
 
 .features__description {
@@ -15,21 +14,73 @@
 
 .features {
   background-color: #ffffff;
-  padding-bottom: 170px;
+  padding: 0 30px;
+  padding-bottom: 35px;
 }
 
 .features__item {
   list-style: none;
-  flex-basis: 270px;
+  flex-basis: 165px;
   padding-left: 90px;
   margin-bottom: 57px;
+  position: relative;
+
+  &::before {
+    .icon-property;
+    width: 76px;
+    height: 76px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 50%;
+    left: -20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--colors::before {
+    background-image: url("../img/colors-icon.png");
+  }
+
+  &--sell::before {
+    background-image: url("../img/sell-icon.png");
+  }
+
+  &--customize::before {
+    background-image: url("../img/customize-icon.png");
+  }
+
+  &--responsive::before {
+    background-image: url("../img/responsive-icon.png");
+  }
+
+  &--designed::before {
+    background-image: url("../img/designed-icon.png");
+  }
+
+  &--no-bound::before {
+    background-image: url("../img/boundaries-icon.png");
+  }
 }
 
 .features__list {
-  margin: 0;
-  margin-top: 118px;
+  margin: 118px 0 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .features__item {
+    flex-basis: 230px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    padding-bottom: 170px;
+  }
+
+  .features__item {
+    flex-basis: 270px;
+  }
 }

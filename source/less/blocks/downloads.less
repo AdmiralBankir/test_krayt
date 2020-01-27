@@ -1,6 +1,6 @@
 .downloads__title {
   .title-font;
-  line-height: 24px;
+  line-height: 37px;
   color: #ffffff;
   font-weight: 400;
   margin: 0 0 87px;
@@ -15,11 +15,46 @@
 .downloads__item {
   list-style: none;
   background-color: #ffffff;
-  flex-basis: 32%;
   min-height: 115px;
+  width: 320px;
   box-sizing: border-box;
   cursor: pointer;
   margin-bottom: 10px;
+  position: relative;
+  transition-duration: @transition-time;
+  transition-timing-function: @transition-function;
+
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    box-shadow: inset 0 2px 2px rgba(172,16,0,1);
+  }
+
+  &::before {
+    .icon-property;
+    width: 115px;
+    height: 115px;
+    background-color: #f7fafc;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--apple::before {
+    background-image: url(../img/apple-icon.png);
+  }
+
+  &--android::before {
+    background-image: url(../img/android-icon.png);
+  }
+
+  &--windows::before {
+    background-image: url(../img/windows-icon.png);
+  }
 }
 
 .downloads__text-link {
@@ -40,7 +75,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: @desktop-width;
 }
 
 .downloads__link {
@@ -51,4 +85,21 @@
   flex-direction: column;
   padding-top: 27px;
   padding-left: 133px;
+}
+
+@media (min-width: @tablet-width) {
+  .downloads__list {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .downloads__title {
+    line-height: 24px;
+  }
+
+  .downloads__list {
+    width: @desktop-width;
+    justify-content: space-between;
+  }
 }

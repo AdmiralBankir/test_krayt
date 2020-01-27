@@ -8,7 +8,6 @@
 .reviews__description {
   .content-font;
   margin: 0 auto 77px;
-  width: 670px;
   text-align: center;
 }
 
@@ -33,6 +32,28 @@
 
 .reviews__author {
   margin-left: 98px;
+  position: relative;
+
+  &::before {
+    .icon-property;
+    top: 0;
+    left: -99px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  &--bullock::before {
+    background: url("../img/bullock.png");
+  }
+
+  &--sebastian::before {
+    background: url("../img/sebastian.png");
+  }
+
+  &--samantha::before {
+    background: url("../img/samantha.png");
+  }
 }
 
 .reviews__author-company,
@@ -42,9 +63,8 @@
 
 .reviews__wrapper {
   display: flex;
-  width: 1140px;
   justify-content: space-between;
-  margin: 0 50px;
+  margin-bottom: 20px;
 }
 
 .reviews__item {
@@ -56,6 +76,11 @@
   background-color: #f7fafc;
   padding: 27px 44px 36px 37px;
   box-sizing: border-box;
+  margin: 0 auto;
+
+  &:not(:first-child) {
+    display: none;
+  }
 
   & blockquote {
     margin: 0;
@@ -76,4 +101,39 @@
 
 .reviews {
   margin-bottom: 120px;
+  padding: 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    &__item {
+      flex-basis: 200px;
+
+      &:not(:last-child) {
+        display: flex;
+      }
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .reviews {
+    padding: 0;
+
+    &__item:not(:first-child) {
+      display: flex;
+    }
+
+    &__wrapper {
+      width: 1140px;
+      margin: 0 50px;
+    }
+
+    &__description {
+      width: 670px;
+    }
+  }
+
+  .reviews__author::before {
+    top: -16px;
+  }
 }

@@ -9,4 +9,22 @@
 
 .social__item {
   list-style: none;
+  cursor: pointer;
+  transition-duration: @transition-time;
+  transition-timing-function: @transition-function;
+
+  & span {
+    font-family: "FontAwesome";
+    font-size: 18px;
+    line-height: 36px;
+    color: #ffffff;
+  }
+
+  &--dribbble span {
+    color: #f31f79;
+  }
+
+  &:hover {
+    transform: scale(1.3);
+  }
 }

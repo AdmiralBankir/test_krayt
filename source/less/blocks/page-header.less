@@ -1,6 +1,7 @@
 .page-header__download {
   .btn-font;
   text-decoration: none;
+  border-radius: none;
 }
 
 .page-header__logo span {
@@ -13,16 +14,57 @@
 
 .page-header {
   background-image: @red-gradient;
+
+  &__mobile-img {
+    display: none;
+  }
 }
 
 .page-header__logo {
-  display: flex;
-  width: 150px;
-  margin-top: 33px;
-  cursor: pointer;
-}
+  padding-top: 15px;
+  padding-bottom: 10px;
+  box-shadow: 0 2px 0 0 #ececec, inset 0 0 0 0 #ececec;
+  text-align: center;
+  display: block;
 
-.page-header__nav-container {
-  display: flex;
-  justify-content: space-between;
+  & img {
+    display: none;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    display: flex;
+    width: 150px;
+    margin-top: 33px;
+    cursor: pointer;
+    box-shadow: none;
+
+    & img {
+      display: block;
+      margin-top: -12px;
+      margin-right: 3px;
+    }
+  }
+
+  .page-header__download {
+    border-radius: 30px;
+  }
+
+  .page-header__nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header {
+    background-image: @red-gradient;
+    padding-bottom: 218px;
+    position: relative;
+
+    &__mobile-img {
+      display: block;
+      position: absolute;
+      top: 142px;
+      right: 0;
+    }
+  }
 }

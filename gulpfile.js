@@ -12,6 +12,9 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 
+var imagemin = require("gulp-imagemin");
+var svgstore = require("gulp-svgstore");
+
 var posthtml = require("gulp-posthtml");
 
 var del = require("del");
@@ -30,6 +33,16 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("img", function() {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.mozjpeg({progressive: true}),
+    imagemin.svgo()
+  ]))
+  .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("server", function () {
@@ -62,7 +75,8 @@ gulp.task("clean", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}"
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
   ], {
     base: "source"
   })

@@ -6,20 +6,26 @@
 .pricing__description {
   .content-font;
   margin: 0 auto 80px;
-  width: 685px;
   text-align: center;
+}
+
+.pricing {
+  margin-bottom: 120px;
+  padding: 0 30px;
 }
 
 .pricing__list {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .pricing__list-item {
   display: flex;
   flex-basis: 263px;
+  margin-bottom: 20px;
   flex-direction: column;
   list-style: none;
   cursor: pointer;
@@ -113,4 +119,18 @@
   line-height: 24px;
   color: #333333;
   text-decoration: none;
+}
+
+@media (min-width: @desktop-width) {
+  .pricing {
+    padding: 0;
+  }
+
+  .pricing__description {
+    width: 685px;
+  }
+
+  .pricing__list-item {
+    margin-bottom: 0;
+  }
 }

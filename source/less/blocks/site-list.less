@@ -15,12 +15,26 @@
 
 .site-list__item {
   list-style: none;
+  padding: 10px;
+text-align: center;
+box-shadow: 0 2px 0 0 #ececec, inset 0 0 0 0 #ececec;
 }
 
 .site-list {
   margin: 0;
   padding: 0;
+}
+
+
+@media (min-width: @desktop-width) {
+  .site-list {
   display: flex;
   justify-content: space-between;
   width: 262px;
+
+  &__item {
+    box-shadow: none;
+    padding: 0;
+  }
+}
 }

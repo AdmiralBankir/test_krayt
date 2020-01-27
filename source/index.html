@@ -17,7 +17,7 @@
       <div class="page-header__nav-container">
 
         <a class="page-header__logo">
-          <img src="" width="50" height="53" alt="Logo Giant">
+          <img src="./img/Logo.svg" width="48" height="40" alt="Logo Giant">
           <span>Giant</span>
         </a>
 
@@ -43,7 +43,7 @@
 
         <h1 class="advantages__title">A Powerful & Unique App Landing Template</h1>
 
-        <p class="advantages_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d</p>
+        <p class="advantages_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -61,6 +61,9 @@
 
       </article>
     </div>
+    <picture>
+      <img class="page-header__mobile-img" width="845" height="600" src="../img/iPhones.png" srcset="../img/iPhones@2x.png 2x" alt="iPnones with interface">
+    </picture>
   </header>
 
   <main class="page-main">
@@ -103,9 +106,9 @@
         <div class="another-features">
           <div class="another-features__container">
             <p class="another-features__title">We don’t leave you stranded</p>
-            <p class="another-features__description">Everyone’s reasons for learning user interface design are different...</p>
+            <p class="another-features__description">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
             <div class="another-features__content-wrapper">
-              <p class="another-features__description">Everyone’s reasons for learning user interface design are diffe</p>
+              <p class="another-features__description">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.</p>
               <ul class="another-features__list">
                 <li class="another-features__item">
                   <p>Unlimited colors: banner with images, slider or video</p>
@@ -119,6 +122,9 @@
               </ul>
             </div>
           </div>
+          <picture>
+            <img class="another-features__mobile-img" width="362" height="469" src="../img/iPhone.png" srcset="../img/iPhone@2x.png 2x" alt="iPnone with interface">
+          </picture>
         </div>
       </div>
     </section>
@@ -127,9 +133,9 @@
       <h2 class="screenshots__title">Take a look at our screenshots</h2>
       <p class="screenshots__description">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
       <div class="slider__container">
-        <button class="slider__toggle" type="button" title="Previous"></button>
-        <img src="#" width="1140" height="500" alt="Screenshots example">
-        <button class="slider__toggle" type="button" title="Next"></button>
+        <button class="slider__toggle screenshots__toggle" type="button" title="Previous"><span class="fas fa-arrow-left"></span></button>
+        <div class="screenshots__example"></div>
+        <button class="slider__toggle screenshots__toggle" type="button" title="Next"><span class="fas fa-arrow-right"></span></button>
       </div>
     </section>
 
@@ -140,18 +146,18 @@
 
         <ol class="pricing__list">
           <li class="pricing__list-item">
-              <label class="pricing__list-title" for="basic-rate">Basic</label>
-              <p class="pricing__list-value"><sup>$</sup>12.0<sub>/m</sub></p>
-              <ul class="price-list__conditions">
-                <li class="price-list__conditions-item">One User</li>
-                <li class="price-list__conditions-item">Multiple Access</li>
-                <li class="price-list__conditions-item">SMS Support</li>
-                <li class="price-list__conditions-item">24/7 Online Support</li>
-              </ul>
-              <p class="pricing__buy">
-                <span>Start Free Trial</span>
-                <a class="pricing__buy-btn" href="">Buy Now</a>
-              </p>
+            <label class="pricing__list-title" for="basic-rate">Basic</label>
+            <p class="pricing__list-value"><sup>$</sup>12.0<sub>/m</sub></p>
+            <ul class="price-list__conditions">
+              <li class="price-list__conditions-item">One User</li>
+              <li class="price-list__conditions-item">Multiple Access</li>
+              <li class="price-list__conditions-item">SMS Support</li>
+              <li class="price-list__conditions-item">24/7 Online Support</li>
+            </ul>
+            <p class="pricing__buy">
+              <span>Start Free Trial</span>
+              <a class="pricing__buy-btn" href="">Buy Now</a>
+            </p>
           </li>
 
           <li class="pricing__list-item">
@@ -208,25 +214,27 @@
 
     <section class="video">
       <h2 class="video__title visually-hidden">Video about Giant</h2>
-      <img src="" alt="Video Player">
+      <div class="video__player">
+        <span class="fal fa-play"></span>
+      </div>
     </section>
 
     <section class="reviews slider">
 
       <h2 class="reviews__title">What out customers are saying</h2>
-      <p class="reviews__description">Everyone’s reasons for learning user interface design are diffe</p>
+      <p class="reviews__description">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
 
       <div class="slider__container">
-        <button class="reviews_toggle slider__toggle" type="button" title="Previous"></button>
+        <button class="reviews_toggle slider__toggle" type="button" title="Previous"><span class="fas fa-arrow-left"></span></button>
 
         <div class="reviews__wrapper">
 
           <div class="reviews__item">
             <blockquote>
-              <p class="reviews__text">The JustLanded for WordPress theme is great, super easy to use</p>
+              <p class="reviews__text">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
             </blockquote>
 
-            <cite class="reviews__author">
+            <cite class="reviews__author reviews__author--bullock">
               <span class="reviews__author-name">Alexandra Bullock</span>
               <span class="reviews__author-company">Apple Inc.</span>
             </cite>
@@ -234,10 +242,10 @@
 
           <div class="reviews__item">
             <blockquote>
-              <p class="reviews__text">Very happy with the theme and incredibly easy to configure, wel</p>
+              <p class="reviews__text">Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.</p>
             </blockquote>
 
-            <cite class="reviews__author">
+            <cite class="reviews__author reviews__author--sebastian">
               <span class="reviews__author-name">Gary Sebastian</span>
               <span class="reviews__author-company">Apple Inc.</span>
             </cite>
@@ -245,17 +253,17 @@
 
           <div class="reviews__item">
             <blockquote>
-              <p class="reviews__text">Definitely a great theme and the support team are fantastic. Cu</p>
+              <p class="reviews__text">Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys</p>
             </blockquote>
 
-            <cite class="reviews__author">
+            <cite class="reviews__author reviews__author--samantha">
               <span class="reviews__author-name">Samantha Bilbau</span>
               <span class="reviews__author-company">Apple Inc.</span>
             </cite>
           </div>
 
         </div>
-        <button class="reviews_toggle slider__toggle" type="button" title="Next"></button>
+        <button class="reviews_toggle slider__toggle" type="button" title="Next"><span class="fas fa-arrow-right"></span></button>
       </div>
 
 
@@ -289,28 +297,20 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <svg width="21" height="23">
-              <use xlink:href="#icon-fb"></use>
-            </svg>
-            <a class="social__link visually-hidden" href="">We are on Facebook</a>
+            <span class="fab fa-facebook-f"></span>
+            <a class="social__link visually-hidden" href="#">We are on Facebook</a>
           </li>
           <li class="social__item">
-            <svg width="18" height="20">
-              <use xlink:href="#icon-twitter"></use>
-            </svg>
-            <a class="social__link visually-hidden" href="">We are on Twitter</a>
+            <span class="fab fa-twitter"></span>
+            <a class="social__link visually-hidden" href="#">We are on Twitter</a>
+          </li>
+          <li class="social__item social__item--dribbble">
+            <span class="fab fa-dribbble"></span>
+            <a class="social__link visually-hidden" href="#">We are on Dribbble</a>
           </li>
           <li class="social__item">
-            <svg width="15" height="20">
-              <use xlink:href="#icon-ball"></use>
-            </svg>
-            <a class="social__link visually-hidden" href="">We are on ?</a>
-          </li>
-          <li class="social__item">
-            <svg width="25" height="21">
-              <use xlink:href="#icon-be"></use>
-            </svg>
-            <a class="social__link visually-hidden" href="">We are on ?</a>
+            <span class="fab fa-behance"></span>
+            <a class="social__link visually-hidden" href="#">We are on Behance</a>
           </li>
         </ul>
 
