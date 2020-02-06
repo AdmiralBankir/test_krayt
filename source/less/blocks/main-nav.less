@@ -1,9 +1,23 @@
+@media(max-width: @mobile-width-only) {
+  .main-nav {
+    display: none;
+
+    &--on {
+      display: block;
+    }
+  }
+
+  .main-nav--no-js {
+    display: block;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .main-nav__container {
-  width: 470px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
-  align-items: center;
-}
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    align-items: center;
+  }
 }

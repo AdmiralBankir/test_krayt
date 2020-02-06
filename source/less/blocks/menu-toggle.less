@@ -1,0 +1,34 @@
+@media(max-width: @mobile-width-only) {
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 21px;
+    cursor: pointer;
+
+    &__one,
+    &__two,
+    &__three {
+      width: 100%;
+      height: 6px;
+      margin: 6px auto;
+      background: white;
+      transition-duration: 0.3s;
+    }
+
+    &--on {
+      .menu-toggle__one {
+        transform: rotate(45deg) translate(7px, 7px);
+      }
+
+      .menu-toggle__two {
+        display: none;
+      }
+
+      .menu-toggle__three {
+        transform: rotate(-45deg) translate(1px, -2px);
+      }
+    }
+  }
+}
