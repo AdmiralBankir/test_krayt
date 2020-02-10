@@ -69,7 +69,7 @@
       </article>
       </d iv>
       <picture>
-        <img class="page-header__mobile-img" width="845" height="600" src="../img/iPhones.png"
+        <img class="page-header__mobile-img" width="845" height="600" loading="lazy" src="../img/iPhones.png"
           srcset="../img/iPhones@2x.png 2x" alt="iPnones with interface">
       </picture>
   </header>
@@ -136,7 +136,7 @@
             </div>
           </div>
           <picture>
-            <img class="another-features__mobile-img" width="362" height="469" src="../img/iPhone.png"
+            <img class="another-features__mobile-img" loading="lazy" width="362" height="469" src="../img/iPhone.png"
               srcset="../img/iPhone@2x.png 2x" alt="iPnone with interface">
           </picture>
         </div>
@@ -150,7 +150,17 @@
       <div class="slider__container">
         <button class="slider__toggle screenshots__toggle" type="button" title="Previous"><span
             class="fas fa-arrow-left"></span></button>
-        <div class="screenshots__example"></div>
+        <div class="screenshots__example">
+          <ul class="carousel__list">
+            <li><img src="../img/carousel-1.png" width="326" height="344" alt=""></li>
+            <li><img src="../img/carousel-2.png" width="326" height="424" alt=""></li>
+            <li><img src="../img/carousel-3.png" width="326" height="504" alt=""></li>
+            <li><img src="../img/carousel-4.png" width="424" height="564" alt=""></li>
+            <li><img src="../img/carousel-5.png" width="326" height="504" alt=""></li>
+            <li><img src="../img/carousel-6.png" width="326" height="424" alt=""></li>
+            <li><img src="../img/carousel-7.png" width="326" height="344" alt=""></li>
+          </ul>
+        </div>
         <button class="slider__toggle screenshots__toggle" type="button" title="Next"><span
             class="fas fa-arrow-right"></span></button>
       </div>
@@ -344,5 +354,6 @@
 
   </main>
 
-  <script src="./js/menu.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/test.js"></script>
 </body>
